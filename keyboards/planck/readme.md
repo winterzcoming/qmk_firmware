@@ -15,8 +15,9 @@ Make example for this keyboard (after setting up your build environment):
 
 Install examples:
 
-    make planck/rev5:default:dfu         # For Planck rev5 or earlier and Planck Light
-    make planck/rev6:default:dfu-util    # For Planck rev6
-    make planck/rev6:cody:dfu-util       # For Planck rev6 cody
+    make planck/rev5:default:dfu             # For Planck rev5 or earlier and Planck Light
+    make planck/rev6:default:dfu-util        # For Planck rev6
+    make planck/rev6:cody:dfu-util           # For Planck rev6 cody
+    make clean planck/rev6:cody:dfu-util     # For Planck rev6 cody clean install/build
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).

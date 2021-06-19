@@ -234,7 +234,7 @@ uint8_t muse_offset = 70;
 uint16_t muse_tempo = 50;
 
 
-void encoder_update_user(uint8_t index, bool clockwise) {
+bool encoder_update_user(uint8_t index, bool clockwise) {
   if (IS_LAYER_ON(_RAISE)) {
     if (clockwise) {
       register_code (KC_Q);
@@ -259,6 +259,7 @@ void encoder_update_user(uint8_t index, bool clockwise) {
       tap_code(KC_VOLU);
     }
   }
+  return true;
 }
 
 
